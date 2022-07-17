@@ -1,0 +1,280 @@
+/*Обнуление*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+    
+  *, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  :focus, :active {
+    outline: none;
+  }
+  
+  a:focus, a:active {
+    outline: none;
+  }
+  
+  nav, footer, header, aside {
+    display: block;
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  input, button, textarea {
+    font-family: inherit;
+  }
+  
+  input::-ms-clear {
+    display: none;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
+  
+  a, a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  img {
+    vertical-align: top;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  
+  /*--------------------*/
+
+/* 
+flex-basis: px or %;
+flex-grow: 0/1;
+flex-shrink:1/0;
+
+flex: 0 1 auto
+*/
+
+body {
+    border: red solid;
+    background:  url(/img/Green__background.png);
+    color: white;
+    font-family: 'Inter';
+    font-style: normal;
+    
+}
+.content{
+    margin: 0 auto;
+    border: red solid;
+}
+header{
+    border: rgb(255, 255, 255) solid;
+    display: flex;
+    height: 100vh;
+    width: 90%;
+    margin: 0 auto;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+.header__sidebar {
+    display: flex;
+    width: 20%;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: #908B0D;
+    padding: 50px 21px;
+    border: 5px white solid;
+}
+.logo div{
+    width: 200px;
+    height: 210px;
+    background:  url(/img/Logo.svg) 50% 50% no-repeat
+}
+.color__change {
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    
+}
+.color__change div{
+    margin: 0 10px;
+    width: 40px;
+    height: 40px;
+    border: 2px white solid;
+    border-radius: 50%;
+}
+.navigation_header{
+    /* border: 1px rgb(244, 0, 0) solid; */
+}
+.navigation_header ul{
+    /* border: 1px black solid; */
+    text-align: center;
+    margin-left: 0;
+    /* Отступ слева в браузере IE и Opera */
+    padding-left: 0;
+    /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+.navigation_header li{
+    list-style-type: none;
+    margin: 30px auto;
+    /* border: 1px black solid; */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+.navigation_header li:hover{
+    border-bottom: 5px white solid;
+    transform: translate(0, -5px);
+    margin-bottom: -5px;
+}
+.header__background_lines {
+    display: flex;
+    position: absolute;
+    /* left: 30.75rem; */
+    left: 27%;
+    width: 12.5rem;
+    top: 0px;
+    bottom: 0px;
+    background: rgba(99, 99, 99, 0.5);
+    border-left: 5px solid #FFFFFF;
+}
+.header__content_top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-content: center; 
+    padding: 300px 0px; */
+    gap: 11px;
+    background-color: aqua;
+    position: absolute;
+    top: 50%;
+    left: 27%;
+    width: 60%;
+}
+.I_am {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 10px 0px 10px 20px;
+    gap: 10px;
+
+    width: 665px;
+    height: 88px;
+}
+.I_am h1{
+    width: 645px;
+    height: 68px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 68px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: flex-end;
+    text-transform: uppercase;
+}
+.UX_UI {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px 20px;
+    
+    width: 665px;
+    height: 120px;
+    
+    /* Green__Blocks */
+    
+    background: #918B0D;
+    border-left: 5px solid #FFFFFF;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+.UX_UI h2{
+    width: 625px;
+    height: 100px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 41px;
+    line-height: 50px;
+    text-transform: uppercase;
+    
+    /* ColorBlind_Text */
+    
+    color: #FFFFFF;
+    
+    /* border: 1px solid #FFFFFF; */
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 1;}
+.about_me {}
+.title {}
+.about_me__items {}
+.download {}
+.skills {}
+.skills__items {}
+.skills_item {}
+.item__icon {}
+.item__info {}
+.item__title {}
+.item__text {}
+.portfolio {}
+.portfolio__row1 {}
+.portfolio__column {}
+.portfolio__row2 {}
+.contacts {}
+.contact__input {}
+.contact__youremail {}
+.contact__youremessage {}
+.submit {}
+.social_links {}
+.linked {}
+.github {}
+.facebook {}
+.youtube {}
